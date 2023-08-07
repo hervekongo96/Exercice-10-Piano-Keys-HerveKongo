@@ -6,10 +6,14 @@ keys.forEach(function(key) {
 })
 
 // Write named functions that change the color of the keys below
-// commit
+function keyPlay(e) {
+  e.target.style.backgroundColor = "yellow"
+}
 
 // Write a named function with event handler properties
-
+function keyReturn(e) {
+  e.target.style.backgroundColor = "";
+}
 
 // Write a loop that runs the array elements through the function
 
