@@ -7,7 +7,7 @@ keys.forEach(function(key) {
 
 // Write named functions that change the color of the keys below
 function keyPlay(e) {
-  e.target.style.backgroundColor = "yellow"
+  e.target.style.backgroundColor = "gold"
 }
 
 // Write a named function with event handler properties
@@ -44,7 +44,9 @@ nextOne.addEventListener("click", function() {
   nextOne.hidden = false;
   nextTwo.hidden = true;
 
-  
+  // change elements content 
+  document.getElementById("letter-note-five").innerHTML = "D"
+  document.getElementById("letter-note-six").innerHTML = "C"
 })
 
 // Write anonymous event handler property and function for the second progress button
