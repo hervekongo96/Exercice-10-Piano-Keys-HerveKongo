@@ -17,6 +17,12 @@ function keyReturn(e) {
 
 // Write a loop that runs the array elements through the function
 
+function assignEvents(note) {
+  note.addEventListener("mousedown", keyPlay);
+  note.addEventListener("mouseup", keyReturn);
+}
+
+notes.forEach(assignEvents);
 
 // These variables store the buttons that progress the user through the lyrics
 let nextOne = document.getElementById('first-next-line');
